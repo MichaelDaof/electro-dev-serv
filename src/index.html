@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to DevServ</h1>
+    <p>
+      Just punch in the directory path of your project, and a development server will automatically spin up for you. 
+      <br>
+      It's even got 'live reload', so whenever you make an edit to your project files, the browser will automatically refresh!
+    </p>
+    <p>An easy to get the path directory on Macs is to open Finder, select your project folder, then press Command+Option+C. Now it's copied and you can paste it in.</p>
+    <form id="server-form">
+      <input type="text" name="path" value="" placeholder="Enter directory path">
+      <input type="submit">
+    </form>
+
+    <div id="server-info"></div>
+    <p id="close-info" hidden>To shut this server down, just quit this app.</p>
+   <script src="renderer.js"></script>
+  </body>
+</html>
